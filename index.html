@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <title>porfolio</title>
+</head>
+<body>
+    <!--navbar--> 
+   <div class="container">
+    <nav class="navbar navbar-expand-lg bg-dark  ">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href class="nav-link " style="color:white" >Home</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href class="nav-link " style="color:white">Login</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    </div>
+     <!--banner-->
+    <div class="container">
+        <img src="https://c4.wallpaperflare.com/wallpaper/107/856/884/black-white-programming-programming-language-python-programming-hd-wallpaper-preview.jpg" width=100% height=600px >     
+
+    </div>
+<br><br>
+ <!--perfil-->
+    <div class="container">
+        <div class="row">
+            <div class="col-3"  >
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAADbCAMAAABOUB36AAAAhFBMVEUAAAD+/v7t7e3////s7Oz29vb39/fz8/P7+/vw8PDd3d2ZmZna2tqKiork5OS4uLjLy8tzc3PExMR1dXUkJCSnp6eTk5NKSkrFxcWtra0sLCxqamo6Ojp7e3tPT09FRUUYGBgxMTFgYGBYWFguLi4ZGRmenp6NjY2Dg4Nra2sLCws4ODhY9QtzAAANi0lEQVR4nO1d7XaquhaFhJBEEdCq3dhau+1ute37v98lBAQhSCAfoPfMH2fM0zG2MiFZaxqyVhzoui5EgKFOMWP0BqWM4hs0+yxUpx6jfo26jHrkmkIiR9k/qlKffawHLxQ42Z+RV2qr0WEyvVJmlZYyOeWCfFdECWNEjmb/yhfRXNokZAoVK8iE/7cyIQPyGDKKGQNCSjNK2ynOKBDS7BuQkPqMuXVKGCVy1GXUr9NSGnDQBX4XvQe0iHCA9VvboBYGkAOsTxQe6K2GA/c/mVXaVyZskQkyQXzQdskUKhZrk5RZWpI2mX0tSUNmps3FlP81pQin/9N4sMJH2Ptpojq1l1Di5PTy9tfJsX5bzqMZZFIboU5MxaFOTCtRj1Pz9gAQSOLtsyPEYbHycMXI3qsLothLXsQSCxyj9BHdtUyM/ixva+R4CiCfSfdp9pJfGZEMrxHAwKTZwymQz4Dbqd+bIkKStaxIhnXiEr9yNVqpKbNHcNRLJMNuld/73gPoRpxn0lxTZg+Gb31FMnzMsJa8acfsQfg1RCTDHNExzR6UkFm4IAhasqQMDjPcNHvelcymw5OTCfhzE1KSUdKDwj/DRTJE3C7wR+iKKM4obaeoFMGpgYRyUlOZDlyWWnSZPWTE7EHY4XlkcKR02i4IkkERto5nj05aJnnVoTI1RR6drtlD5G+3Ajn8DbUuPzmlrSOqDo/4B10q08SCM69G2Ody11anWI5mV1aYPZbTc4eXUrdO88WBmxTCoz6VqSNi8TafHHzUiCiuU1Cj+erBLXvgXqjMRIF7nSrTX2doimYPJnpVOs4Gm5DZteRVCLr2fZclr5lulY4T09LsXUbqMLNHUxTmiNHc4dUo6aSk9++ubqxzA4fZRTYobafoQjWbPV9qMaQv9rBHQrFh9lYmVLJhOyUXBKGBIcuwBpOSOTej0nFOeEJmj5pS6TgzoNHsEQbu2qSof0XJkzmZT5Bwh4fLS6hQJEeFeRO6dXrz/RANzKl0HA+25U0hBTWqz+xhI8mkwB5Ow+wBA/6nCjqa2bsatFh58ec25hKDtkMmdLg5yuZpRv0uShr03azM99zh8bAipHURDaqeUFBsVqXjRK56QlG2B8RoAGJ4gRNwQQatQYHONX/zMmlkXuYfdZmqcxMbdEAFzhrMXhqtRJEWiyMtrgddd2de5g7hSnjFQlrEVMyuHNX/2iNvCs0e9MyrdJyADjJ7lbyp6IKghanpOAkd2ezBhQ2ZZ2zP7IkH7YcNmW9YftAaMXvw3YbMH3Tb7F2FIANmz/SvkwJ0XLNHjRtajhkc1QXZ8EAM8bgy8caOzEhVptrcpIM3APVDojo31SLt8H1O/bBFspG25We1fN4ULZKYW4e+xgIr5k01FwS3tmSOavbuUKZw0HYsR1ubm1eD9tb4bfmFovZyAVpKKF++4ssFxYRiLW+Oa/YsuaDVyGbPkqcNRpZp9GVYCW9cswesLAU5jjuu2SNQ22bEW/jns/0w6dcVG2ZqlNYoqtC62ZPd6361Ngy/bch86Vok6bAH6it7VkztSeOS1zCZivv35RBpXMActPcAAhsyZ9cOT9bsefJmz++ihjY+VbFGgxyePrPneVhDpUIXvoVZxOprXBurQQlsiQwW329a8EHh+DIB+TSt8geqy1Sdm55/Ni3zCarPzdR+X3ZHg3JLNJDeHe0a/y0WI3Y1+e7oktJ2iupUR2GjaZlEw153RReUUtMpZTmNPXumVxD+aJHJZqhiVdGPSZU/bhEA+aD1BFVF9VIiTr1C2sXsqZT+Y2I01p5hr9L/up68IYByQkmp0Xe5MdWxCVzZHrASXE1VmyK8+pOpXDC5aybB05HpGgtCP15HnLdl9jJqsA6ldUL2mptMa7VPwKC+BzQ0JTMr5unTXbTsewAr0jS1LMOGcsq5PntUuliol6ma2jwctoUD+2Yvo9DI49z72mRyR8SQOzw4pF+Qi03InGlrDpn3wswsUzv1O6lr4PX8lnRemCTV1t4B6DfwP0RfLy8d9sA1s+GrY2vXSD1JkMYeFgwHOMnWK7rfXM90ytQ1N1l805pUTlITUrZSPn+fkgVgnjezLFKj+ad3UY3vU3Zs1OT3MF/y4rczS4vtFNSogW7Drsa3gIEvnDJK/Wl1NaBD2uoYtlPusweopmh7gLpl6jF7OaWaloWA7k7g6q3Ur0C0dO1YEc2Xpb/PnoaFhBPqMYAsm70LVX7X8IJ7hAPrLqigWDEMHXjsGEVmnyTmKZV07gjsE9z7mb30r8UsvKYNH9JtSehM4TfZO+1nvLggPiFrtCLNqURdYRaRbLJ+HQ/AYJ0/M3o/R0tAb+CGhPeADgkH43QbZjoHufhdSAdFvbFkpnRAvH12faG2yZm9MkED2nsL6pPBY180LZ0JaN/ijS8X9VtMrNFbV2O0S3/QY4KuY2SyS79+F1SZKJ50W5Y9oarhYLyjJShaST3QdVws0YwsU0glXk9RKvGL5as8KAQOltl2blAp0y3PL+T01iPse5Qh9jpeO5xptvUwu4SBreQzyg8tdGuUS7tl9pSOlqhQHM5bh+564zfOk7gbs1efKBiv9gL79/kUc0EawwGoUbvniLHdQ5vvykNdH+dx8QP1cWTy8euGwZ8oiVZBiFx26JS949IMzU1xrvZZ6KUmHclts1duwatTpbNzxBvoNGwTlKdcjwN5csluLR822f0UUfEeyP7bIS9UuZW8exlA2eSoUZanrJg94UT579DY0WVeU6WN5xWZso0zWmXCnmaP0vyUnArF7VSpjKAsi7gqlqB9W8nXqM8+q0oreiyYvUpC4RdV5BYAxFnk3swev16XpQ/s+tQLZzFDEASzcMb+k4vHOMum9+aCuDYEwjBeJdv9y9vvumXh9mf9+rHcL75SY4TYPyP0PhYwKWYDJow35+Nrz7Xaz8Px9BUFAPt80GqVqXNuQhzGyeJFsSvm7riNZn72YPXNzaxYtdI4vQ8ty11dQkC8edLYHeD3aROnV5uZNbmyYL+8ML9+uYXZA8Ark2WVipPlhfI7B6KzkeKFwyKZIUy7Tx2GlV9CF3qRpt6sA+NZtDdaXv25TDw+OSy4IIFMlhFX538mJRb4XcSEx5nB7zflZDbGbxpvIq0nTXXhuAkRBtVB6/Ywe3yeZu07skYeFYprtGwFgglItJxy1w/PX7M09F81R/G7KNczKKH4kZV2rSK8bUJMO0+KVTZ76VfExhu538bLKjvn2qALomi2fR9XJMPnV3bWjBmZadCJLbSskMMy4CHfgNlbad7lrYbnCGOg2+z5KLGSIftgl6SpQ+jwbpg90G720tja70RxW9hF2ZG/V2avzJs9zV46XCf3JAvsIkT1mD0YKBxDbR6HGAF1s4dsnB2hhu8Qdg7aiiMSUOxbalmqhoRZQAWzF056vJY4BHiw2bPWllUH5ggNc0EUjGbQh+DNGyQTGTpS0xh+Ytjb7AFkqce3Tmy6zF4tMmHXHfnX1jAsC7PXiLTCvEnJnUTYOg58gkqYPaYy/B37eofiH4KyZo+Gk/TpclizHikyZu+uVbKGmbDd7F0O6kIYWGkgbA6//nUIYtIECWWElUm9OFDUZfYA3I99lepYul0uCCdjX6MOJB0ybfVpN40Q3jJ7gBpsPmYTrzfNnq1zP8xj7rebPZOHptvGjLaaPTj5ZR95LFGr2TPWeGwMBEBo9ryHSJkllrhp9rIV+AeamQxe9eVCJeo+TJjlSLDQ7MFJvfBSxzMSuaBHyiYcrLS3KdPS6Ur2kFCR2TPen9029ricm9nLJLaF2H+wqZlOTphLS81emUPfx74s3fiEsOmCHsoCceCmTF0NjaYEAOtmz9rRzDbhwUtVEckLqdADDtqQXGrELgnl4dwBO8mpYfYgGvui9CMUuSDFnfjTA2u82JQ5mf14unBEIrP3ECu0VXzRhtkz2Zt9LGSb1nktWsXsISuHL9rDMa/Grcl8tMcZtC1g3uGuinac8PXKHiya6kBoteLCLD7wVb+gag0/IQ+j85hqqki77uUF8En/N37uXp8/jsv9+bxYLE6n7WmeYrs47/fL75ePt9d/7/q/c97xGhcHyjvY1q8f3+ftfJOs4tDDBMKsGjf7Nl4jWFJ+DS72wiCYxatoc3o6fvSt+2ziLejczEZg0P9Nys/6cNxvN9EqDvLiSjcvJIZ5FXXlhUb1FQ6nLMzTQnw6yqDvBXEyXyw/Drv+/Re/Y+xL7NlLv2y1l9n1vXtbnufRahWEhTZaFKjfKthqyKzuVGYsvztZYSbrNhREG1a5LHNJf8+Rhylo2bPn1/bspeMsjDfbp+OhunfmZ80m2ZkNxyCeefno458m12S90W+df1ke5wU0b9NCKVMMXRDG0Wa+2C+Ptef8mU6UbRT42eEPoj17jRGUU3apCKUjL7sb2Q0vJ1VRpQVAd5MrD9VpudOzq71DvSCVUpffAnZl2T4KduPSAcQvhwo2gfvSW/qhZD13/y4WKucG5eV5mWUVF2i0vd8Uy6xpe+ieJPcus3c8UK/Ov11FYKY5pF82PxfTe0CnCGONW9tvbf+EMvHWKwPsgZlwYLEB3cRkuiKqINOdjExQWhJQbzPVbklaO2e415Rbd1ijZXfRKtXTXRSgOv0fRPTLs5pl7XoAAAAASUVORK5CYII=" style="border-radius: 15px;" width=100% height=100%>
+            </div>
+            <div class="col-1 ">
+                <a href ><span class="material-symbols-outlined">
+                    edit
+                    </span></a>
+            </div>
+            <div class="col-7"  style="padding-top: 80px;"  >
+              
+                <p>  <span class="material-symbols-outlined">
+                    badge
+                    </span> Lucas Pradier</p>
+                
+                <p> <span class="material-symbols-outlined">
+                    school
+                    </span> Estudiante de Desarrollo de Software</p>
+                
+                <p> <span class="material-symbols-outlined">
+                    person_pin_circle
+                    </span> Misiones, Argentina</p>
+            </div>
+            <div class="col-1">
+               <a href=""> <span class="material-symbols-outlined">
+                edit
+                </span></a> 
+            </div>
+        </div>
+    </div>
+<br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <button type="button" class="btn btn-dark">Tengo interés en</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-secondary">Añadir sección</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-link">Más</button>
+            </div>
+        </div>
+    </div>
+<br>
+
+    <div class="container">
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+    </div>
+
+     <!--acerca de-->
+        <div class="container">
+            <div class="row">
+                <div class="col-11" >
+                
+                    <h1><span class="material-symbols-outlined">
+                        contact_support
+                        </span> Acerca de </h1>
+                    
+                </div>
+                <div class="col-1">
+                        
+                   <a href=""><span class="material-symbols-outlined">
+                    add_circle
+                    </span></a> 
+                </div>
+            <div class="row">
+            <div class="col-11" >
+            
+                <p>Estudiante de Desarrollo de Software, oriundo de la ciudad de Posadas Misiones, tengo 25 años y estoy muy interesado en el mundo de la programacion.</p>
+                
+            </div>
+            <div class="col-1">
+                <a href=""><span class="material-symbols-outlined">
+                    edit
+                </span></a>  
+                <a href=""><span class="material-symbols-outlined">
+                    delete
+            </span>    </a>    
+            </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <div class="container">
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+    </div>
+
+     <!--experiencia-->
+        <div class="container">
+            <div class="row">
+                <div class="col-11" >
+                
+                    <h1> <span class="material-symbols-outlined">
+                        work
+                        </span> Experiencia</h1>
+                    
+                </div>
+                <div class="col-1">
+                        
+                    <a href=""><span class="material-symbols-outlined">
+                        add_circle
+                        </span></a> 
+                </div>
+            <div class="row">
+            <div class="col-11" >
+            
+                <p>Ninguna</p>
+                
+            </div>
+            <div class="col-1">
+                <a href=""><span class="material-symbols-outlined">
+                    edit
+                </span></a>  
+                <a href=""><span class="material-symbols-outlined">
+                    delete
+            </span>    </a>   
+            </div>
+        </div>
+        </div>    
+        </div>
+        <br>
+        <div class="container">
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+    </div>
+
+     <!--educacion-->
+        <div class="container">
+            <div class="row">
+                <div class="col-11" >
+                
+                    <h1><span class="material-symbols-outlined">
+                        school
+                        </span> Educación</h1>
+                    
+                </div>
+                <div class="col-1">
+                        
+                    <a href=""><span class="material-symbols-outlined">
+                        add_circle
+                        </span></a> 
+                </div>
+            <div class="row">
+            <div class="col-11" >
+            
+                <ul>
+                    <li>Instituto Janssen - Tecnico superior en automotores </li>
+                    <li>Instituto INCADE - Desarrollo de software (en curso) </li>
+                </ul>
+                
+            </div>
+            <div class="col-1">
+                <a href=""><span class="material-symbols-outlined">
+                    edit
+                </span></a>  
+                <a href=""><span class="material-symbols-outlined">
+                    delete
+            </span>    </a>    
+            </div>
+        </div>
+        </div>   
+            
+            
+        </div>
+        <br>
+        <div class="container">
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+    </div>
+
+     <!--habilidades-->
+        <div class="container">
+            <div class="row">
+                <div class="col-11" >
+                
+                    <h1> <span class="material-symbols-outlined">
+                        psychology
+                        </span> Habilidades</h1>
+                    
+                </div>
+                <div class="col-1">
+                        
+                    <a href=""><span class="material-symbols-outlined">
+                        add_circle
+                        </span></a> 
+                </div>
+            <div class="row">
+            <div class="col-11" >
+            
+                <ul>
+                    <li>Duras</li>
+                        <ul>
+                            <li>HTML - CSS - BOOTSTRAP</li>
+                            <li>JAVASCRIPT - TYPESCRIPT</li>
+                            <li>MYSQL</li>
+                        </ul>
+                        <br>
+                    <li>Blandas</li>
+                        <ul>
+                             <li>RESPONSABILIDAD</li>
+                            <li>PUNTUALIDAD</li>
+                            <li>DEDICACION</li>
+                        </ul>
+                </ul>
+                
+            </div>
+            <div class="col-1">
+                <a href ><span class="material-symbols-outlined">
+                    edit
+                </span></a>  
+                <a href=""><span class="material-symbols-outlined">
+                    delete
+            </span>    </a>  
+            </div>
+        </div>
+            
+            
+        </div>
+        </div>
+        <br>
+        <div class="container">
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+    </div>
+
+     <!--contacto-->
+        <div class="container">
+            <h1> <span class="material-symbols-outlined">
+                contacts
+                </span> Contacto</h1>
+            <br>
+            <div class="row">
+                <div  class="col text-center" >
+                   <p> <span class="material-symbols-outlined">
+                    mail
+                    </span> lucas@gmail.com</p> 
+                </div>
+                <div class="col text-center">
+                    <p> 
+                        <span class="material-symbols-outlined">
+                                call
+                            </span> 3764556633</p>
+                </div>
+            </div>
+            
+
+        </div>
+    <br><br>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
