@@ -7,7 +7,10 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExperienciaEducacionComponent } from './componentes/experiencia-educacion/experiencia-educacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
-import { ContactoComponent } from './componentes/contacto/contacto.component';
+
+import { LoginComponent } from './componentes/login/login.component';
+import { PorfolioComponent } from './componentes/porfolio/porfolio.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
     AcercaDeComponent,
     ExperienciaEducacionComponent,
     SkillsComponent,
-    ContactoComponent
+    
+    LoginComponent,
+    PorfolioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

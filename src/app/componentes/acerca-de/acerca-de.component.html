@@ -14,9 +14,9 @@
         </div>
         <div class="col-1">
                 
-           <a href=""><span class="material-symbols-outlined">
+           <button type="button" class="btn "><span id="icono" class="material-symbols-outlined">
             add_circle
-            </span></a> 
+            </span></button> 
         </div>
     <div class="row">
     <div class="col-11" >
@@ -25,12 +25,32 @@
         
     </div>
     <div class="col-1">
-        <a href=""><span class="material-symbols-outlined">
-            edit
-        </span></a>  
-        <a href=""><span class="material-symbols-outlined">
+        <button type="button" class="btn  btn-sm" data-bs-toggle="modal" data-bs-target="#descripcionAcercaDe">
+            <span id="icono" class="material-symbols-outlined">
+                edit
+                </span>
+          </button> 
+          <div class="modal fade" id="descripcionAcercaDe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                    <p>Acerca De: <input type="textarea" name="descripcion"> </p>
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Editar</button>
+                </div>
+                </div>
+            </div>
+            </div>  
+            <button type="button" class="btn  btn-sm"><span id="icono" class="material-symbols-outlined">
             delete
-    </span>    </a>    
+    </span>   </button>    
     </div>
 </div>
 </div>

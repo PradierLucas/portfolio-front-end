@@ -1,0 +1,9 @@
+a:hover {
+    border:solid 1px white ;
+    border-radius: 10px;
+}
+#icono{
+    color: black;
+    padding-top: 5px;
+   
+}
