@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="crearExp()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreEmpresa">Nombre de la Empresa</label>
+                    <input type="text" class="form-control" name="nombreEmpresa" id="nombreEmpresa" [(ngModel)]="experiencia.nombreEmpresa" >
+                </div>
+                <div class="form-group">
+                    <label for="puesto">Puesto</label>
+                    <input type="text" class="form-control" name="puesto" id="puesto" [(ngModel)]="experiencia.puesto" >
+                </div>
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha de Inicio</label>
+                    <input type="text" class="form-control" name="fechaInicio" id="fechaInicio" [(ngModel)]="experiencia.fechaInicio" >
+                </div>
+                <div class="form-group">
+                    <label for="fechaFin">Fecha Fin</label>
+                    <input type="text" class="form-control" name="fechaFin id="fechaFin [(ngModel)]="experiencia.fechaFin" >
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion" [(ngModel)]="experiencia.descripcion" >
+                </div>
+                <button class="btn btn-primary">
+                    Agregar experiencia
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

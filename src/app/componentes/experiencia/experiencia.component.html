@@ -1,0 +1,53 @@
+<!--experiencia-->
+<div style="border:1px black solid;border-radius: 5px; padding:20px " class="container">
+    <div class="row">
+        <div class="col-10">
+
+            <h1> <span class="material-symbols-outlined">
+                    work
+                </span> Experiencia</h1>
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+        </div>
+        <div class="col-2">
+
+            <button type="button" class="btn" routerLink="/nuevaexp" >  <span style="color:black" class="material-symbols-outlined">
+                    add_circle
+                </span></button>
+        </div>
+    </div>
+        <div *ngFor="let Experiencia of lista" class="row">
+            <div  class="col-10">
+                
+               <ul >     
+                <div   class="container">
+                <li><p>Nombre de la Empresa:  {{Experiencia.nombreEmpresa}}</p></li>
+                <li><p>Puesto: {{Experiencia.puesto}}</p></li>
+                <li><p>Fecha de Inicio: {{Experiencia.fechaInicio}}</p></li>
+                <li><p>Fecha de Fin: {{Experiencia.fechaFin}} </p></li>
+                <li><p>Descripcion {{Experiencia.descripcion}}</p></li>
+            </div>
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+
+            </ul>
+            
+
+            </div>
+            <div class="col-2">
+                <button routerLink="/editarexp , experiencia.id" type="button" class="btn  btn-sm" routerLink="/editarexp">
+                    <span style="color:black" class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button>
+
+                <button (click)="eliminarExp(Experiencia.id)" type="button" class="btn btn-sm">
+                    <span  style="color:black" class="material-symbols-outlined">
+                        delete
+                    </span> </button>
+            </div>
+        </div>
+    </div>
+
+<br>
+<div class="container">
+    <hr align="left" noshade="noshade" size="2" width="80%" />
+</div>
