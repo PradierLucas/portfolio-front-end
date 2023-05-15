@@ -14,7 +14,7 @@ import { GuardsGuard } from './servicios/guards.guard';
 
 const routes: Routes = [
 
-  {path:"porfolio", component:PorfolioComponent, canActivate:[GuardsGuard]},
+  {path:"porfolio", component:PorfolioComponent, },
   {path:"login", component:LoginComponent},
   {path:"",redirectTo:"login",pathMatch:'full'},
   {path:"nuevaexp",component:NewExperienciaComponent},
