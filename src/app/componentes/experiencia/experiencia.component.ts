@@ -38,13 +38,13 @@ export class ExperienciaComponent implements OnInit {
     });
   }
 
-  editarExp(id: string) {
-    this.router.navigate(['editarexp', id]);
-  }
+ editarExp(id: string, experiencia){
+  this.sExp.update(id, experiencia).subscribe(dato=>{this.cargarExp();})
+ }
 
   eliminarExp(id: string) {
     this.sExp.delete(id).subscribe(
-      dato => { this.cargarExp(); console.log(id); }
+      dato => { this.cargarExp(); }
     );
   }
 

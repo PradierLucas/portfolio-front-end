@@ -1,8 +1,17 @@
 export class Educacion {
-    id?: number;
-    nombre?:string;
-    titulo?: string;
-    fechaInicio?:string;
-    fechaFin?:string;
+    id: string;
+    nombre:string;
+    titulo: string;
+    fechaInicio:string;
+    fechaFin:string;
+
+    constructor(id: string, nombre:string, titulo:string, fechaInicio:string, fechaFin:string){
+        this.nombre=nombre;
+        this.id=id;
+        this.titulo=titulo;
+        this.fechaInicio=fechaInicio;
+        this.fechaFin=fechaFin;
+
+    }
 
 }

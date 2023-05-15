@@ -4,7 +4,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
-import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
+
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 
@@ -15,12 +15,19 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia/new-experiencia.component';
 import { EditarExpComponent } from './componentes/experiencia/editar-exp.component';
+import { PersonaComponent } from './componentes/persona/persona.component';
+import { EditarPersonaComponent } from './componentes/persona/editar-persona/editar-persona.component';
+import { EditarEduComponent } from './componentes/educacion/editar-edu/editar-edu.component';
+import { NuevaEduComponent } from './componentes/educacion/nueva-edu/nueva-edu.component';
+import { EditarSkillComponent } from './componentes/skills/editar-skill/editar-skill.component';
+import { NuevaSkillComponent } from './componentes/skills/nueva-skill/nueva-skill.component';
+import { AgregarpersonaComponent } from './componentes/persona/agregarpersona/agregarpersona.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
-    AcercaDeComponent,
+
     ExperienciaComponent,
     SkillsComponent,
     
@@ -29,7 +36,14 @@ import { EditarExpComponent } from './componentes/experiencia/editar-exp.compone
     FooterComponent,
     EducacionComponent,
     NewExperienciaComponent,
-    EditarExpComponent
+    EditarExpComponent,
+    PersonaComponent,
+    EditarPersonaComponent,
+    EditarEduComponent,
+    NuevaEduComponent,
+    EditarSkillComponent,
+    NuevaSkillComponent,
+    AgregarpersonaComponent
   ],
   imports: [
     BrowserModule,

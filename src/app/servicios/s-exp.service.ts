@@ -20,11 +20,11 @@ expURL="http://localhost:8080/exp/"
     public save(experiencia: Experiencia): Observable<any>{
       return this.httpClient.post(this.expURL + `new/exp` , experiencia);}
 
-      public update(id:string, experiencia: Experiencia):Observable<Object>{
-        return this.httpClient.put(this.expURL + `edit/exp/${id}`, experiencia);
+      public update(id:string, experienciaActual: Experiencia):Observable<any>{
+        return this.httpClient.put( this.expURL +`edit/exp/${id}`, experienciaActual);
       }
       public delete(id:string):Observable<any>{
-        return this.httpClient.delete<any>("/elimExp/" + id );
+        return this.httpClient.delete<any>(this.expURL +`elimExp/${id}` );
       }
 
     }

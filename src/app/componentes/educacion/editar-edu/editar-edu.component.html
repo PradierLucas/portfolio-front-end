@@ -1,0 +1,54 @@
+<div id="exp" class="container">
+   
+    <div class="container">
+    <h3>Editar experiencia</h3> 
+        <div class="row">
+           
+            <div>
+                <form [formGroup]="form" (ngSubmit)="editarEdu() "  >
+                    <div class="form-group">
+                        <label for="nombreEmpresa">Nombre de la Institución</label>
+                        <input type="text" class="form-control" formControlName="nombre"  [(ngModel)]="educacionActual.nombre" >
+                        <div *ngIf="form.get('nombre').errors && form.get('nombre').touched">
+                            <p style="color:red" *ngIf="form.get('nombre').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="puesto">Titulo</label>
+                        <input type="text" class="form-control" formControlName="titulo"  [(ngModel)]="educacionActual.titulo" >
+                        <div *ngIf="form.get('titulo').errors && form.get('titulo').touched">
+                            <p style="color:red" *ngIf="form.get('titulo').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaInicio">Fecha de Inicio</label>
+                        <input type="text" class="form-control" formControlName="fechaInicio"  [(ngModel)]="educacionActual.fechaInicio" >
+                        <div *ngIf="form.get('fechaInicio').errors && form.get('fechaInicio').touched">
+                            <p style="color:red" *ngIf="form.get('fechaInicio').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaFin">Fecha Fin</label>
+                        <input type="text" class="form-control" formControlName="fechaFin"  [(ngModel)]="educacionActual.fechaFin" >
+                        <div *ngIf="form.get('fechaFin').errors && form.get('fechaFin').touched">
+                            <p style="color:red" *ngIf="form.get('fechaFin').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+                    
+    
+                    <br>
+                    <button type="submit" [disabled]="form.invalid" class="btn btn-primary">
+                        Guardar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+

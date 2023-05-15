@@ -1,31 +1,61 @@
+
+
+<div id="exp" class="container">
+   
 <div class="container">
+<h3>Agregar experiencia</h3> 
     <div class="row">
+       
         <div>
-            <form (ngSubmit)="crearExp()" novalidate #f="ngForm">
+            <form [formGroup]="form" (ngSubmit)="crearExp() "  >
                 <div class="form-group">
                     <label for="nombreEmpresa">Nombre de la Empresa</label>
-                    <input type="text" class="form-control" name="nombreEmpresa" id="nombreEmpresa" [(ngModel)]="experiencia.nombreEmpresa" >
+                    <input type="text" class="form-control" formControlName="nombreEmpresa"  [(ngModel)]="experiencia.nombreEmpresa" >
+                    <div *ngIf="form.get('nombreEmpresa').errors && form.get('nombreEmpresa').touched">
+                        <p style="color:red" *ngIf="form.get('nombreEmpresa').hasError('required')">
+                          Es un campo requerido
+                        </p></div>
                 </div>
+
                 <div class="form-group">
                     <label for="puesto">Puesto</label>
-                    <input type="text" class="form-control" name="puesto" id="puesto" [(ngModel)]="experiencia.puesto" >
+                    <input type="text" class="form-control" formControlName="puesto"  [(ngModel)]="experiencia.puesto" >
+                    <div *ngIf="form.get('puesto').errors && form.get('puesto').touched">
+                        <p style="color:red" *ngIf="form.get('puesto').hasError('required')">
+                          Es un campo requerido
+                        </p></div>
                 </div>
                 <div class="form-group">
                     <label for="fechaInicio">Fecha de Inicio</label>
-                    <input type="text" class="form-control" name="fechaInicio" id="fechaInicio" [(ngModel)]="experiencia.fechaInicio" >
+                    <input type="text" class="form-control" formControlName="fechaInicio"  [(ngModel)]="experiencia.fechaInicio" >
+                    <div *ngIf="form.get('fechaInicio').errors && form.get('fechaInicio').touched">
+                        <p style="color:red" *ngIf="form.get('fechaInicio').hasError('required')">
+                          Es un campo requerido
+                        </p></div>
                 </div>
                 <div class="form-group">
                     <label for="fechaFin">Fecha Fin</label>
-                    <input type="text" class="form-control" name="fechaFin id="fechaFin [(ngModel)]="experiencia.fechaFin" >
+                    <input type="text" class="form-control" formControlName="fechaFin"  [(ngModel)]="experiencia.fechaFin" >
+                    <div *ngIf="form.get('fechaFin').errors && form.get('fechaFin').touched">
+                        <p style="color:red" *ngIf="form.get('fechaFin').hasError('required')">
+                          Es un campo requerido
+                        </p></div>
                 </div>
                 <div class="form-group">
                     <label for="descripcion">Descripcion</label>
-                    <input type="text" class="form-control" name="descripcion" id="descripcion" [(ngModel)]="experiencia.descripcion" >
+                    <input type="text" class="form-control" formControlName="descripcion"  [(ngModel)]="experiencia.descripcion" >
+                    <div *ngIf="form.get('descripcion').errors && form.get('descripcion').touched">
+                        <p style="color:red" *ngIf="form.get('descripcion').hasError('required')">
+                          Es un campo requerido
+                        </p></div>
                 </div>
-                <button class="btn btn-primary">
-                    Agregar experiencia
+
+                <br>
+                <button type="submit" [disabled]="form.invalid" class="btn btn-primary">
+                    Guardar
                 </button>
             </form>
         </div>
     </div>
+</div>
 </div>

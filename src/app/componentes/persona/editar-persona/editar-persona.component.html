@@ -1,0 +1,61 @@
+<div id="exp" class="container">
+   
+    <div class="container">
+    <h3>Editar usuario</h3> 
+        <div class="row">
+           
+            <div>
+                <form [formGroup]="form" (ngSubmit)="editarPersona() "  >
+                    <div class="form-group">
+                        <label for="nombre">Nombre </label>
+                        <input type="text" class="form-control" formControlName="nombre"  [(ngModel)]="personaActual.nombre" >
+                        <div *ngIf="form.get('nombre').errors && form.get('nombre').touched">
+                            <p style="color:red" *ngIf="form.get('nombre').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" formControlName="apellido"  [(ngModel)]="personaActual.apellido" >
+                        <div *ngIf="form.get('apellido').errors && form.get('apellido').touched">
+                            <p style="color:red" *ngIf="form.get('apellido').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="foto">Foto</label>
+                        <input type="text" class="form-control" formControlName="foto"  [(ngModel)]="personaActual.foto" >
+                        <div *ngIf="form.get('foto').errors && form.get('foto').touched">
+                            <p style="color:red" *ngIf="form.get('foto').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" class="form-control" formControlName="titulo"  [(ngModel)]="personaActual.titulo" >
+                        <div *ngIf="form.get('titulo').errors && form.get('titulo').touched">
+                            <p style="color:red" *ngIf="form.get('titulo').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion</label>
+                        <input type="text" class="form-control" formControlName="descripcion"  [(ngModel)]="personaActual.descripcion" >
+                        <div *ngIf="form.get('descripcion').errors && form.get('descripcion').touched">
+                            <p style="color:red" *ngIf="form.get('descripcion').hasError('required')">
+                              Es un campo requerido
+                            </p></div>
+                    </div>
+                    
+    
+                    <br>
+                    <button type="submit" [disabled]="form.invalid" class="btn btn-primary">
+                        Guardar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    

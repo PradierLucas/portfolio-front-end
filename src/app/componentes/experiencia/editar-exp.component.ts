@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 
-import {  SExpService } from 'src/app/servicios/s-exp.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { SExpService } from 'src/app/servicios/s-exp.service';
+import {  ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from 'src/app/models/experiencia';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-editar-exp',
@@ -12,27 +13,50 @@ import { Experiencia } from 'src/app/models/experiencia';
 })
 export class EditarExpComponent {
 
-  id:string ;
-  nombreEmpresa:string = "";
+  form: FormGroup;
 
-    puesto: string ="";
-    fechaInicio: string ="";
-    fechaFin: string ="";
-    descripcion: string ="";
-   experiencia: Experiencia 
-constructor(private sExp: SExpService, private router:Router,private route:ActivatedRoute){}
+  id:string="";
+  experienciaActual: Experiencia = {
+    id: "", nombreEmpresa: "",
+    puesto: "",
+    fechaInicio: "",
+    fechaFin: "",
+    descripcion: ""
+  };
 
-ngOnInit():void {
-  this.id = this.route.snapshot.params['id'];
-    this.sExp.buscar(this.id).subscribe(dato =>{
-      this.experiencia = dato;
-    },error => console.log(error));
+  constructor(private sExp: SExpService,
+     private activatedRouter: ActivatedRoute,
+      private route:Router,private formBuilder:FormBuilder) {
+        this.buildForm();
+       }
+
+    
+  
+      private buildForm(){
+        this.form= this.formBuilder.group({
+          nombreEmpresa:["",[Validators.required]],
+          puesto:["",[Validators.required]],
+          fechaInicio:["",[Validators.required]],
+          fechaFin:["",[Validators.required]],
+          descripcion:["",[Validators.required]],
+        })
+    
+    
+      }
+
+  ngOnInit(): void {
+    this.id=this.activatedRouter.snapshot.params['id'];
+   }
+
+  editarExp(): void {
+    this.sExp.update(this.id,this.experienciaActual).subscribe(dato => {
+      if (this.form.valid) {
+        const value = this.form.value;};
+      alert("Experiencia actualizada");
+      this.route.navigate(["/porfolio"]);
+    })
+  }
+
 }
 
-editarExp(){
-  this.sExp.update(this.id,this.experiencia).subscribe(dato => {
-    this.router.navigate(["/porfolio"]);
-  },error => console.log(error));
-}
-}
 

@@ -7,63 +7,63 @@
             <h1><span class="material-symbols-outlined">
                     school
                 </span> Educación</h1>
-                <div class="container">
-                    <hr align="left" noshade="noshade" size="2" width="80%" />
-                </div>
+            <div class="container">
+                <hr align="left" noshade="noshade" size="2" width="80%" />
+            </div>
         </div>
         <div class="col-2">
 
-            <button class="btn"><span style="color:black" class="material-symbols-outlined">
+            <button routerLink="/nuevaedu" class="btn"><span style="color:black" class="material-symbols-outlined">
                     add_circle
                 </span></button>
         </div>
+
     </div>
-        <div class="row">
+
+
+        <div *ngFor="let Educacion of lista" class="row">
             <div class="col-10">
                 <br>
-
-                <p> > Instituto Janssen - Tecnico superior en automotores </p>
-
-
+                <ul>
+                    <li>
+                        <p>Nombre de la Institución: {{Educacion.nombre}}</p>
+                    </li>
+                    <li>
+                        <p>Titulo: {{Educacion.titulo}}</p>
+                    </li>
+                    <li>
+                        <p>Fecha de Inicio: {{Educacion.fechaInicio}}</p>
+                    </li>
+                    <li>
+                        <p>Fecha de Fin: {{Educacion.fechaFin}} </p>
+                    </li>
+                </ul>
 
             </div>
             <div class="col-2">
-                <button type="button" class="btn  btn-sm" >
-                    <span style="color:black" class="material-symbols-outlined">
-                        edit
-                        </span>
-                  </button> 
-                 
-                <button class="btn btn-sm"><span style="color:black" class="material-symbols-outlined">
-                    delete
-            </span>    </button>   
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-10">
-                <br>
-                <p> > Instituto INCADE - Desarrollo de software (en curso)</p>
-
-            </div>
-            <div class="col-2">
-                <br>
-                <button type="button" class="btn  btn-sm" >
+                <button type="button" class="btn  btn-sm" [routerLink]="['/editaredu/',Educacion.id]"
+                    routerLinkActive="router-link-active">
                     <span style="color:black" class="material-symbols-outlined">
                         edit
                     </span>
                 </button>
-             
-                <button class="btn btn-sm"><span style="color:black" class="material-symbols-outlined">
+
+                <button (click)="eliminarEdu(Educacion.id)" type="button" class="btn btn-sm">
+                    <span style="color:black" class="material-symbols-outlined">
                         delete
                     </span> </button>
-                </div>
+            </div>
+            <div class="container">
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+        </div>
         </div>
 
-</div>
-<br>
 
-<div class="container">
-    <hr align="left" noshade="noshade" size="2" width="80%" />
+
+       
 </div>
 <br>
+        <div class="container">
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+        </div>
+        <br>

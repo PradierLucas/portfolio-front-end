@@ -1,0 +1,13 @@
+#exp {
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 40%;
+    align-content: center;
+    color: black;
+    padding: 20px;
+}
+
+h3{
+    padding-bottom: 20px;
+}

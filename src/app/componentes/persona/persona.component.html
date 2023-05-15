@@ -1,0 +1,45 @@
+<div *ngFor="let Persona of lista" style=" padding-top:20px" class="container">
+
+   
+    <img [src]="Persona.foto" style="margin-top: -170px; border-radius: 50%;" width=250px height=250px>
+
+
+    <div style=" padding-top:50px" class="row">
+        <div class="col-10">
+            <h1><i class="bi bi-person-vcard"></i> Sobre Mi</h1>
+
+            <br>
+            <ul>
+
+                <li>
+                    <p>Nombre: {{Persona.nombre}} {{Persona.apellido}}</p>
+                </li>
+                <li>
+                    <p>Titulo: {{Persona.titulo}}</p>
+                </li>
+                <li>
+                    <p>Descripcion: {{Persona.descripcion}}</p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-2">
+            <button [routerLink]="['/editarpersona/',Persona.id]" routerLinkActive="router-link-active" type="button"
+                class="btn  btn-sm">
+                
+                <span id="icono" class="material-symbols-outlined">
+                    edit
+                </span>
+            </button>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<br>
+<div class="container">
+    <hr align="left" noshade="noshade" size="2" width="80%" />
+</div>
