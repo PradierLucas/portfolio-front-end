@@ -1,6 +1,6 @@
 {
    "/*" : {
-    "target":"http://localhost:8080",
+    "target":"https://porfolio-deg6.onrender.com",
     "secure": false,
     "loglevel": "debug"
    }

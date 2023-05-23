@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class SkillsService {
 
-  expURL="http://localhost:8080/skills/"
+  expURL="https://porfolio-deg6.onrender.com/skills/"
   constructor(private httpClient: HttpClient) {}
 
     public lista():Observable<any>{

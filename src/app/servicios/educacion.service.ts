@@ -8,7 +8,7 @@ import { Educacion } from '../models/educacion';
 })
 export class EducacionService {
 
-  expURL="http://localhost:8080/edu/"
+  expURL="https://porfolio-deg6.onrender.com/edu/"
   constructor(private httpClient: HttpClient) {}
 
     public lista():Observable<any>{

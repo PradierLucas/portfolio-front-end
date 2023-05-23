@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class PersonaService {
 
-  expURL="http://localhost:8080/persona/"
+  expURL="https://porfolio-deg6.onrender.com/persona/"
   constructor(private httpClient: HttpClient) {}
 
     public lista():Observable<any>{

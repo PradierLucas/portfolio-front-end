@@ -10,7 +10,6 @@ import { NuevaSkillComponent } from './componentes/skills/nueva-skill/nueva-skil
 import { EditarSkillComponent } from './componentes/skills/editar-skill/editar-skill.component';
 import { EditarPersonaComponent } from './componentes/persona/editar-persona/editar-persona.component';
 import { AgregarpersonaComponent } from './componentes/persona/agregarpersona/agregarpersona.component';
-import { GuardsGuard } from './servicios/guards.guard';
 
 const routes: Routes = [
 

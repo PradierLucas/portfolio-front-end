@@ -10,7 +10,7 @@ export class LoginService {
 
 
 
-  url = "http://localhost:8080/login/";
+  url = "https://porfolio-deg6.onrender.com/login/";
   currentUserSubject: BehaviorSubject<any>;
   
   constructor(private http: HttpClient) {
@@ -20,7 +20,7 @@ export class LoginService {
 
 Iniciarsesion(credenciales:any):Observable<any>{
 
-return this.http.post(this.url + 'new/log', credenciales).pipe(map(data=> {sessionStorage.setItem('currentUser', JSON.stringify(data));
+return this.http.post( this.url + 'new/log', credenciales).pipe(map(data=> {sessionStorage.setItem('currentUser', JSON.stringify(data));
 
 return data;
 }))
