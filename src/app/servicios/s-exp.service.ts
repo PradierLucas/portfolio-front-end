@@ -11,7 +11,7 @@ expURL="https://porfolio-deg6.onrender.com/exp/"
   constructor(private httpClient: HttpClient) {}
 
     public lista():Observable<any>{
-      return this.httpClient.get( `ver/exp`);
+      return this.httpClient.get(this.expURL + `ver/exp`);
     }
     public buscar(id:string):Observable<any>{
       return this.httpClient.get(this.expURL + `encontrar/exp/${id}` )
